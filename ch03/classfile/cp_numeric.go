@@ -6,4 +6,6 @@ type ConstantIntegerInfo struct {
 	val int32
 }
 
-func (self)
+func (self *ConstantIntegerInfo) readInfo(read *ClassReader) {
+	
+}
