@@ -22,7 +22,7 @@ func Parse(classData [] byte) (cf *ClassFile, err error) {
 			var ok bool
 			err, ok = r.(error)
 			if !ok {
-				err = fmt.Errorf("%v", range)
+				err = fmt.Errorf("%v", r)
 			}
 		}
 	}()
