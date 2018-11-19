@@ -3,6 +3,14 @@ package classfile
 import "fmt"
 import "unicode/utf16"
 
+/*
+ * UTF-8常量：存放MUTF-8编码的字符串
+CONSTANT_Utf8_info {
+    u1 tag;
+    u2 length;
+    u1 bytes[length];
+}
+*/
 type ConstantUtf8Info struct {
 	str string
 }
