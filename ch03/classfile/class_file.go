@@ -7,11 +7,11 @@ type ClassFile struct {
 	minorVersion		uint16
 	majorVersion 		uint16
 	constantPool		ConstantPool
-	accessFlage			uint16
-	thisClass			uint16
-	superClass			uint16
-	interfaces			uint16
-	fields				[] uint16
+	accessFlags			uint16 	// 类访问标志
+	thisClass			uint16	// 类名索引
+	superClass			uint16	// 父类名索引
+	interfaces			uint16	// 接口索引
+	fields				[] uint16	// 字段和方法索引表
 	methods				[] *MemberInfo
 	attributes			[] AttributeInfo
 }
