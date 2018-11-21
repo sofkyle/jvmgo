@@ -1,5 +1,12 @@
 package classfile
 
+/*
+ * class常量结构
+CONSTANT_Class_info {
+    u1 tag;
+    u2 name_index;
+}
+*/
 /** 类或者接口的符号引用 **/
 type ConstantClassInfo struct {
 	cp					ConstantPool
