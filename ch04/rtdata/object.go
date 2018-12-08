@@ -1,4 +1,4 @@
-package rtda
+package rtdata
 
 type Object struct {
 	// todo
