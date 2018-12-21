@@ -34,7 +34,7 @@ func (self *Stack) pop() *Frame {
 	return top
 }
 
-func (slef *Stack) top() *Frame {
+func (self *Stack) top() *Frame {
 	if self._top == nil {
 		panic("jvm stack is empty!")
 	}

@@ -31,7 +31,7 @@ func (self LocalVars) GetFloat(index uint) float32 {
 
 func (self LocalVars) SetLong(index uint, val int64) {
 	self[index].num = int32(val)
-	self[index + 1] = int32(val >> 32)
+	self[index + 1].num = int32(val >> 32)
 }
 
 func (self LocalVars) GetLong(index uint) int64 {
@@ -47,7 +47,7 @@ func (self LocalVars) SetDouble(index uint, val float64) {
 
 func (self LocalVars) GetDouble(index uint) float64 {
 	bits := uint64(self.GetLong(index))
-	return math.Float64bits(bits)
+	return math.Float64frombits(bits)
 }
 
 func (self LocalVars) SetRef(index uint, ref *Object) {
