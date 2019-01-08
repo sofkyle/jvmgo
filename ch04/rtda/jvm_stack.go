@@ -1,4 +1,4 @@
-package rtdata
+package rtda
 
 type Stack struct {
 	maxSize					uint

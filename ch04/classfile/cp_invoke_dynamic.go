@@ -6,8 +6,8 @@ type ConstantMethodHandleInfo struct {
 }
 
 func (self *ConstantMethodHandleInfo) readInfo(reader *ClassReader) {
-	self.referenceKind = reader.readUint8
-	self.referenceInde = reader.readUint16
+	self.referenceKind = reader.readUint8()
+	self.referenceIndex = reader.readUint16()
 }
 
 type ConstantMethodTypeInfo struct {

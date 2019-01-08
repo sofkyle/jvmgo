@@ -1,4 +1,4 @@
-package rtdata
+package rtda
 
 type Slot struct {
 	num					int32
