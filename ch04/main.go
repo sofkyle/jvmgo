@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+//import "fmt"
 import _ "jvmgo/ch04/classfile"
 import _ "jvmgo/ch04/classpath"
 import "jvmgo/ch04/rtda"
