@@ -1,8 +1,8 @@
 package base
 
 type BytecodeReader struct {
-	code 	[]byte
-	pc 		int
+	code []byte // bytecodes
+	pc   int
 }
 
 func (self *BytecodeReader) Reset(code []byte, pc int) {

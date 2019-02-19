@@ -7,10 +7,12 @@ type Instruction interface {
 	Execute(frame *rtda.Frame)
 }
 
-type NoOperandsInstruction struct {}
+type NoOperandsInstruction struct {
+	// empty
+}
 
 func (self *NoOperandsInstruction) FetchOperands(reader *BytecodeReader) {
-	// nothing to
+	// nothing to do
 }
 
 type BranchInstruction struct {
